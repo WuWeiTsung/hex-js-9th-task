@@ -93,9 +93,11 @@ function renderCart(data) {
             </td>
             <td>NT$${item.product.price}</td>
             <td>${item.quantity}</td>
-            <td>NT$${item.product.price}</td>
+            <td>NT$${item.product.price * item.quantity}</td>
             <td class="discardBtn">
-                <a href="#" class="material-icons" data-id="${item.id}"> clear </a>
+                <a href="#" class="material-icons" data-id="${
+					item.id
+				}"> clear </a>
             </td>
         </tr>
       `;
